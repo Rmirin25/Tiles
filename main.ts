@@ -395,48 +395,35 @@ d 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 d d d d d a a d d d d d 7 7 7 7 7 d d 
 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
 `)
 game.showLongText("Villagers lived in peace.", DialogLayout.Bottom)
-Artic_Villager.x += 1
-Grassy_Villager.x += 2
+Dark_Villager.x += 12
+Grassy_Villager.x += 7
 Artic_Villager.x += 20
-Sun_Villager.x += 2
+Sun_Villager.x += 5
 game.showLongText("The villages prospered, and everyone was happy.", DialogLayout.Bottom)
 Dark_Villager.follow(Grassy_Villager)
 Sun_Villager.x += 15
+let mySprite = sprites.create(img`
+. . . . . . . e c 7 . . . . . . 
+. . . . e e e c 7 7 e e . . . . 
+. . c e e e e c 7 e 2 2 e e . . 
+. c e e e e e c 6 e e 2 2 2 e . 
+. c e e e 2 e c c 2 4 5 4 2 e . 
+c e e e 2 2 2 2 2 2 4 5 5 2 2 e 
+c e e 2 2 2 2 2 2 2 2 4 4 2 2 e 
+c e e 2 2 2 2 2 2 2 2 2 2 2 2 e 
+c e e 2 2 2 2 2 2 2 2 2 2 2 2 e 
+c e e 2 2 2 2 2 2 2 2 2 2 2 2 e 
+c e e 2 2 2 2 2 2 2 2 2 2 4 2 e 
+. e e e 2 2 2 2 2 2 2 2 2 4 e . 
+. 2 e e 2 2 2 2 2 2 2 2 4 2 e . 
+. . 2 e e 2 2 2 2 2 4 4 2 e . . 
+. . . 2 2 e e 4 4 4 2 e e . . . 
+. . . . . 2 2 e e e e . . . . . 
+`, SpriteKind.Food)
+mySprite.setPosition(49, 15)
+Artic_Villager.say(":)", 100)
+mySprite.startEffect(effects.halo, 10)
 game.showLongText("The four kingdoms were united, and shared resources.", DialogLayout.Bottom)
-let Arctic_Monster = sprites.create(img`
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . 1 1 1 1 1 1 1 1 1 1 . . . . . . . . . . . . . . . . . 
-. . . 1 1 1 1 1 1 1 1 1 1 . . . . . . . . . . . . . . . . . 
-. . . 1 1 1 1 1 1 1 1 1 1 . . . . . . . . . . . . . . . . . 
-. . . 1 1 1 1 1 1 1 1 1 1 . . . . . . . . . . . . . . . . . 
-. . . 1 2 2 2 1 1 2 2 2 1 . . . . . . . . . . . . . . . . . 
-. . . 1 1 1 1 1 1 1 1 1 1 . . . . . . . . . . . . . . . . . 
-. . . 1 1 1 1 2 2 1 1 1 1 . . . . . . . . . . . . . . . . . 
-. . . 1 1 1 1 1 1 1 1 1 1 . . . . . . . . . . . . . . . . . 
-. . . 1 1 1 1 1 1 1 1 1 1 . . . . . . . . . . . . . . . . . 
-. . . 1 1 1 1 1 1 1 1 1 1 . . . . . . . . . . . . . . . . . 
-. . . 1 1 1 1 1 1 1 1 1 1 . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-`, SpriteKind.Enemy)
-Arctic_Monster.follow(Artic_Villager, 800)
-Artic_Villager.x += 2
 scene.setBackgroundImage(img`
 c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c 
 c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c 
@@ -562,3 +549,57 @@ f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f 
 music.siren.play()
 game.showLongText("And then... tragedy struck.", DialogLayout.Bottom)
 effects.blizzard.startScreenEffect(2000)
+let Arctic_Monster = sprites.create(img`
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . f f . . . . . . . . . f f f f . . . . . . . . . . . . . . . . . . 
+. . . . . f f f f f f . . . . . . f 1 1 1 f f . . . . . . . . . . . . . . . . . 
+. . . . . f 1 1 1 1 f . . . . . f f 1 3 1 1 f . . . . . . . . . . . . . . . . . 
+. . . . . f 1 1 3 1 1 f f f f f f 1 1 3 3 1 f f . . . . . . . . . . . . . . . . 
+. . . . . f 1 3 3 1 1 1 1 1 1 1 1 1 1 1 1 1 f f . . . . . . . . . . . . . . . . 
+. . . . . f 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 f . . . . . . . . . . . . . . . . . 
+. . . . . f f 1 f 1 1 1 1 1 1 1 1 1 1 1 1 f . . . . . . . . . . . . . . . . . . 
+. . . . . . . f d d 1 1 2 1 1 1 2 1 1 1 1 f . . . . . . . . . . . . . . . . . . 
+. . . . . . . f d d d 1 f 1 1 1 f 1 1 1 1 f . . . . . . . . . . . . . . . . . . 
+. . . . . . . f 1 1 1 1 1 1 f 1 1 1 1 1 1 f . . . . . . . . . . . . . . . . . . 
+. . . . . . . f f 1 1 1 1 1 1 1 1 1 1 f f . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . f f f 1 1 1 1 1 1 f f f . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . f f f f f f f f f 1 f f . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . f f 1 1 1 1 1 1 1 1 1 1 d d f . . . . . . . . . . . . . . . . . 
+. . . . . . . . f 1 1 1 1 1 1 1 1 1 1 1 1 d f . . . . . . . . . . . . . . . . . 
+. . . . . . . f f 1 1 1 1 1 1 1 1 1 1 1 1 1 f f . . . . . . . . . . . . . . . . 
+. . . . . . . f d d 1 1 1 1 1 1 1 1 1 1 1 1 1 f . . . . . . . . . . . . . . . . 
+. . . . . . . f d d 1 1 1 1 d d 1 1 1 1 1 1 1 f f . . . . . . . . . . . . . . . 
+. . . . . . f f d d 1 1 1 1 d d d 1 1 1 1 1 1 f f f . . . . . . . . . . . . . . 
+. . . . . . f 1 d 1 1 1 1 1 d 1 1 1 1 1 1 1 1 f d d f . . . . . . . . . . . . . 
+. . . . . . f d d 1 1 1 1 1 1 1 1 1 1 1 1 d d f 1 1 f f f f f f . . . . . . . . 
+. . . . . . f d 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 f 1 1 1 1 1 1 1 f f f f . . . . . 
+. . . . . . f 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 f f f f f f f 1 1 d f f . . . . . 
+. . . . . . f f 1 1 1 1 1 1 1 1 1 1 1 f f f f f . . . . . f f f f f . . . . . . 
+. . . . . . . f f d 1 d 1 1 1 1 f f f f f f . . . . . . . . . . . f . . . . . . 
+. . . . . . . . . d d d f f f f . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+`, SpriteKind.Enemy)
+let Grass_Monster = sprites.create(img`
+. . . . . . . . . . f f f . . . 
+. . . . . . . . . f f 7 f f . . 
+. . . . . . . . f f 7 7 7 f . . 
+. . . . . . . . f 6 7 7 f . . . 
+. . . . . . . . f 6 6 6 f . . . 
+. . . . . . . . f 6 6 6 f f . . 
+. . . f f f f f f f 6 6 6 f f . 
+. . f f 7 7 7 7 f f f 6 6 6 f . 
+. f 7 7 7 7 7 7 7 7 f 6 6 6 f f 
+f 7 7 7 7 7 7 7 7 7 f f 6 6 6 f 
+f 7 1 f 7 7 1 f 7 7 7 f 6 6 6 f 
+f 7 2 f 7 7 2 f 7 7 7 f 6 6 6 f 
+f 7 7 7 7 7 7 7 7 7 7 f 6 6 6 f 
+. f 7 1 7 7 1 7 7 7 7 f 6 6 f . 
+. f f f f f f f f f f f f f f . 
+. . . . . . . . . . . . . . . . 
+`, SpriteKind.Enemy)
+Arctic_Monster.setPosition(-40, -50)
+Arctic_Monster.follow(Artic_Villager, 800)
+Artic_Villager.x += 2
+Grass_Monster.follow(Grassy_Villager)
