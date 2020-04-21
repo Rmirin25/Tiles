@@ -75,6 +75,25 @@ d d d d d d d d d d d d d d d d
 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
 1 1 9 1 1 1 9 1 1 1 9 1 1 1 9 1 
 `
+    //% blockIdentity=images._tile
+    export const tile5 = img`
+9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 
+9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 
+9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 
+9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 
+9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 
+9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 
+9 9 9 9 9 9 1 1 1 9 9 9 9 9 9 9 
+9 9 9 9 9 1 1 1 1 1 9 9 9 9 9 9 
+9 9 9 9 1 1 1 1 1 1 1 9 9 9 9 9 
+9 9 9 1 1 1 1 1 1 1 1 1 9 9 9 9 
+9 9 9 1 1 1 1 1 1 1 1 1 9 9 9 9 
+9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 
+9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 
+9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 
+9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 
+9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 
+`
 }
 scene.setBackgroundImage(img`
 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
@@ -1336,7 +1355,7 @@ f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f 
 f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f 
 `)
 pause(100)
-game.showLongText("The villagers were divided into four kingdoms...", DialogLayout.Bottom)
+game.showLongText("The villagers were divided into five kingdoms...", DialogLayout.Bottom)
 tiles.setTilemap(tiles.createTilemap(
             hex`1000100009090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090904040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404`,
             img`
@@ -1357,7 +1376,33 @@ tiles.setTilemap(tiles.createTilemap(
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 `,
-            [myTiles.tile0,sprites.builtin.coral2,sprites.castle.tilePath5,myTiles.tile2,myTiles.tile3,sprites.castle.tileDarkGrass2,sprites.castle.tileDarkGrass3,sprites.builtin.forestTiles0,sprites.castle.tileGrass1,myTiles.tile4],
+            [myTiles.tile0,sprites.builtin.coral2,sprites.castle.tilePath5,myTiles.tile2,myTiles.tile3,sprites.castle.tileDarkGrass2,sprites.castle.tileDarkGrass3,sprites.builtin.forestTiles0,sprites.castle.tileGrass1,myTiles.tile4,myTiles.tile5],
             TileScale.Sixteen
         ))
-game.showLongText("Ice...", DialogLayout.Bottom)
+game.showLongText("Arctic...", DialogLayout.Bottom)
+tiles.setTilemap(tiles.createTilemap(
+            hex`1000100018181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818180909090909090909090909090909090909090909090909090909090909090909`,
+            img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`,
+            [myTiles.tile0,sprites.builtin.coral2,sprites.castle.tilePath5,myTiles.tile2,myTiles.tile3,sprites.castle.tileDarkGrass2,sprites.castle.tileDarkGrass3,sprites.builtin.forestTiles0,sprites.castle.tileGrass1,myTiles.tile4,sprites.builtin.forestTiles23,sprites.builtin.forestTiles19,sprites.builtin.forestTiles28,sprites.builtin.oceanDepths11,sprites.builtin.oceanDepths10,sprites.builtin.oceanSand15,sprites.dungeon.darkGroundCenter,sprites.dungeon.greenOuterNorth0,sprites.dungeon.greenInnerSouthEast,sprites.dungeon.greenInnerSouthWest,sprites.dungeon.greenOuterEast2,sprites.dungeon.stairSouth,sprites.builtin.brick,sprites.dungeon.hazardLava1,myTiles.tile5],
+            TileScale.Sixteen
+        ))
+game.showLongText("Sky...", DialogLayout.Bottom)
+game.showLongText("Earth...", DialogLayout.Bottom)
+game.showLongText("And Dark...", DialogLayout.Bottom)
