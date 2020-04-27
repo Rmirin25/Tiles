@@ -1405,4 +1405,7 @@ tiles.setTilemap(tiles.createTilemap(
         ))
 game.showLongText("Sky...", DialogLayout.Bottom)
 game.showLongText("Earth...", DialogLayout.Bottom)
+// WOW This is quite a story!  I love what you have
+// done so far!  Keep up the good Work! ~L
+//
 game.showLongText("And Dark...", DialogLayout.Bottom)
