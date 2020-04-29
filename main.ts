@@ -113,6 +113,44 @@ c c c c c c c c c c c c c c c c
 c c c c c c c c c c c c c c c c 
 c c c c c c c c c c c c c c c c 
 `
+    //% blockIdentity=images._tile
+    export const tile8 = img`
+6 8 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+6 8 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+6 8 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+6 8 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+6 8 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+6 8 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+6 8 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+6 8 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+6 8 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+6 8 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+6 8 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+6 8 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+6 8 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+6 8 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+6 8 8 8 8 8 8 8 8 8 7 7 7 7 7 7 
+6 6 6 6 6 6 6 6 6 8 8 8 8 8 8 8 
+`
+    //% blockIdentity=images._tile
+    export const tile9 = img`
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+7 d 7 d 7 d 7 d 7 d 7 d 7 d 7 d 
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+7 d 7 d 7 d 7 d 7 d 7 d 7 d 7 d 
+7 7 7 7 7 7 7 d d 7 7 7 7 7 7 7 
+7 d 7 d 7 d d d d d 7 d 7 d 7 d 
+7 7 7 7 7 7 d 6 6 d 7 7 7 7 7 7 
+7 d d d d d d 6 6 d 7 d 7 d 7 d 
+d d 6 6 6 d 6 6 6 d 7 7 7 7 7 d 
+6 6 6 6 6 6 6 6 6 d 7 d 7 d d d 
+6 6 6 6 6 6 6 6 6 d 7 7 7 d d d 
+6 6 6 6 6 6 6 6 6 d 7 d d d 6 6 
+6 6 6 6 6 6 6 6 6 d d d 6 6 6 6 
+6 6 6 6 6 6 6 6 6 6 d d 6 6 6 6 
+6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
+6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
+`
 }
 scene.setBackgroundImage(img`
 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
@@ -1395,7 +1433,7 @@ tiles.setTilemap(tiles.createTilemap(
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 `,
-            [myTiles.tile0,sprites.builtin.coral2,sprites.castle.tilePath5,myTiles.tile2,myTiles.tile3,sprites.castle.tileDarkGrass2,sprites.castle.tileDarkGrass3,sprites.builtin.forestTiles0,sprites.castle.tileGrass1,myTiles.tile4,sprites.builtin.forestTiles23,sprites.builtin.forestTiles19,sprites.builtin.forestTiles28,sprites.builtin.oceanDepths11,sprites.builtin.oceanDepths10,sprites.builtin.oceanSand15,sprites.dungeon.darkGroundCenter,sprites.dungeon.greenOuterNorth0,sprites.dungeon.greenInnerSouthEast,sprites.dungeon.greenInnerSouthWest,sprites.dungeon.greenOuterEast2,sprites.dungeon.stairSouth,sprites.builtin.brick,sprites.dungeon.hazardLava1,myTiles.tile5,myTiles.tile6],
+            [myTiles.tile0,sprites.builtin.coral2,sprites.castle.tilePath5,myTiles.tile2,myTiles.tile3,sprites.castle.tileDarkGrass2,sprites.castle.tileDarkGrass3,sprites.builtin.forestTiles0,sprites.castle.tileGrass1,myTiles.tile4,sprites.builtin.forestTiles23,sprites.builtin.forestTiles19,sprites.builtin.forestTiles28,sprites.builtin.oceanDepths11,sprites.builtin.oceanDepths10,sprites.builtin.oceanSand15,sprites.dungeon.darkGroundCenter,sprites.dungeon.greenOuterNorth0,sprites.dungeon.greenInnerSouthEast,sprites.dungeon.greenInnerSouthWest,sprites.dungeon.greenOuterEast2,sprites.dungeon.stairSouth,sprites.builtin.brick,sprites.dungeon.hazardLava1,myTiles.tile5,myTiles.tile6,myTiles.tile8,myTiles.tile9],
             TileScale.Sixteen
         ))
 game.showLongText("Sky...", DialogLayout.Bottom)
@@ -1419,7 +1457,7 @@ tiles.setTilemap(tiles.createTilemap(
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 `,
-            [myTiles.tile0,myTiles.tile2,myTiles.tile3,myTiles.tile4,myTiles.tile5,myTiles.tile6,sprites.castle.tilePath1,sprites.castle.tileGrass1,sprites.castle.tileGrass3],
+            [myTiles.tile0,myTiles.tile2,myTiles.tile3,myTiles.tile4,myTiles.tile5,myTiles.tile6,sprites.castle.tilePath1,sprites.castle.tileGrass1,sprites.castle.tileGrass3,myTiles.tile8,myTiles.tile9],
             TileScale.Sixteen
         ))
 game.showLongText("Earth...", DialogLayout.Bottom)
@@ -1443,7 +1481,7 @@ tiles.setTilemap(tiles.createTilemap(
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 `,
-            [myTiles.tile0,sprites.builtin.coral2,sprites.castle.tilePath5,myTiles.tile2,myTiles.tile3,sprites.castle.tileDarkGrass2,sprites.castle.tileDarkGrass3,sprites.builtin.forestTiles0,sprites.castle.tileGrass1,myTiles.tile4,myTiles.tile5,myTiles.tile6],
+            [myTiles.tile0,sprites.builtin.coral2,sprites.castle.tilePath5,myTiles.tile2,myTiles.tile3,sprites.castle.tileDarkGrass2,sprites.castle.tileDarkGrass3,sprites.builtin.forestTiles0,sprites.castle.tileGrass1,myTiles.tile4,myTiles.tile5,myTiles.tile6,myTiles.tile8,myTiles.tile9],
             TileScale.Sixteen
         ))
 game.showLongText("Arctic...", DialogLayout.Bottom)
@@ -1467,7 +1505,7 @@ tiles.setTilemap(tiles.createTilemap(
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 `,
-            [myTiles.tile0,myTiles.tile2,myTiles.tile3,myTiles.tile4,myTiles.tile5,myTiles.tile6],
+            [myTiles.tile0,myTiles.tile2,myTiles.tile3,myTiles.tile4,myTiles.tile5,myTiles.tile6,myTiles.tile8,myTiles.tile9],
             TileScale.Sixteen
         ))
 // WOW This is quite a story!  I love what you have
@@ -1477,101 +1515,51 @@ tiles.setTilemap(tiles.createTilemap(
 // Thank you!
 game.showLongText("Dark...", DialogLayout.Bottom)
 tiles.setTilemap(tiles.createTilemap(
-            hex`1000100009080808080808080808080808080809070707070707070707080808080808080808080808080808070708080808080808080808080808080807070707080808080808080808080808080808070708080808080808080808080808080808080808080808080808080808080707070707080808080808080808070707080808080808080808080807070708080808080808080807070707070808080808080808080807070808080808080808080808080808080808080808080808080808080807070707070808080808080808080808080808080807070808070707070808080808080808080707070708080707070809080808080808080808080808080709`,
+            hex`100010001a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a`,
             img`
 . . . . . . . . . . . . . . . . 
-2 2 2 2 2 2 2 2 . . . . . . . . 
-. . . . . . . 2 2 2 . . . . . . 
-. . . . . . . . . 2 2 2 2 . . . 
-. . . . . . . . . . . . 2 2 . . 
 . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . 2 2 2 2 2 
-. . . . . . 2 2 2 2 2 2 . . . . 
-. . . . . 2 2 . . . . . . . . . 
-. . . 2 2 . . . . . . . . . . . 
-. . 2 2 . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
-2 2 2 2 2 . . . . . . . . . . . 
-. . . . 2 2 2 . . 2 2 2 2 . . . 
-. . . . . . 2 2 2 2 . . 2 2 2 . 
-. . . . . . . . . . . . . . 2 2 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
 `,
-            [myTiles.tile0,myTiles.tile2,myTiles.tile3,myTiles.tile4,myTiles.tile5,myTiles.tile6,sprites.castle.tileGrass2,sprites.castle.tilePath5,sprites.castle.tilePath1,sprites.castle.tilePath3],
+            [myTiles.tile0,myTiles.tile2,myTiles.tile3,myTiles.tile4,myTiles.tile5,myTiles.tile6,sprites.castle.tileGrass2,sprites.castle.tilePath5,sprites.castle.tilePath1,sprites.castle.tilePath3,myTiles.tile8,sprites.builtin.forestTiles3,sprites.builtin.forestTiles1,sprites.builtin.forestTiles4,sprites.builtin.forestTiles23,sprites.builtin.forestTiles17,sprites.builtin.forestTiles19,sprites.builtin.forestTiles20,sprites.builtin.oceanSand15,sprites.builtin.oceanSand14,sprites.castle.shrub,sprites.castle.saplingOak,sprites.builtin.brick,sprites.builtin.crowd7,sprites.dungeon.hazardLava0,sprites.dungeon.hazardWater,myTiles.tile9],
             TileScale.Sixteen
         ))
 game.showLongText("And the outreaches", DialogLayout.Bottom)
 game.showLongText("With the divide, resources became blocked off by the evils.", DialogLayout.Bottom)
 game.showLongText("They need a hero to save them.", DialogLayout.Bottom)
 game.showLongText("That hero is you.", DialogLayout.Center)
+House_Villagers.setFlag(SpriteFlag.Invisible, true)
+mySprite.setFlag(SpriteFlag.Invisible, true)
 let Anise = sprites.create(img`
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . f f f f f f f f . . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . f f f f f f f f f f . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . f f f f f f f f f f . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . f f f f f e e f f f . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . f f f f e e e e f f . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . f e e e e e e e e f . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . e e e e e e e e e e . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . e e e e f e e f e e e e . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . e e e e f e e f e e e e . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . e e e e f e e f e e e e . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . e e e e e e e e e e . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . 2 e e e e e e e e 2 . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . f f . e e e e . . f . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . f f . e e e e . . f . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . f f . e e e e . . f f . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . 2 f e e e e e e e f f f 2 . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . 2 2 2 2 f f e e e e e e f f 4 2 2 2 . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . 2 2 2 4 f f f 2 2 2 2 2 f f f f 2 2 . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . 2 2 2 f f f f 2 2 2 2 2 f f f f 2 2 . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . 2 2 2 f f f f 2 2 2 2 2 2 f f 2 2 2 . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . 2 2 4 f f 2 2 2 2 2 2 2 f f 4 2 2 . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . e e e 4 2 2 2 2 2 2 2 2 2 4 e e e . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . e e e 2 2 2 2 2 2 2 2 2 2 2 e e e . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . e e e 2 2 2 2 2 2 2 2 2 2 2 e e e . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . e e e 2 2 2 2 2 2 2 2 2 2 2 e e e . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . e e e 2 2 2 2 2 2 2 2 2 2 2 e e e . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . e e e 2 2 2 2 2 2 2 2 2 2 2 e e e . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . e e e 2 2 2 2 2 2 2 2 2 2 2 e e e . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . e e e 2 2 2 2 2 2 2 2 2 2 2 e e e . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . e e e 2 2 2 2 2 2 2 2 2 2 2 e e e . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . e e e 2 2 2 2 2 2 2 2 2 2 2 e e e . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . e e e b 8 8 8 8 8 8 8 8 8 8 e e e . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . e e . b 8 8 8 8 8 8 8 8 8 8 . e e . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . e e . 8 8 8 8 8 8 8 8 8 8 8 . e e . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . 8 8 8 8 8 8 8 8 8 8 8 . e e . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . 8 8 8 8 8 8 8 8 8 8 8 . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . 8 8 8 8 8 c 8 8 8 8 8 . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . 8 8 8 8 8 c 8 8 8 8 8 . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . 8 8 8 8 8 c 8 8 8 8 8 . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . 8 8 8 8 8 c 8 8 8 8 8 . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . 8 8 8 8 8 c 8 8 8 8 8 . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . 8 8 8 8 8 c 8 8 8 8 8 . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . 8 8 8 8 8 c 8 8 8 8 8 . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . 8 8 8 8 8 c 8 8 8 8 8 . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . 8 8 8 8 8 c 8 8 8 8 8 . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . 8 8 8 8 8 c 8 8 8 8 8 . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . 8 8 8 8 8 c 8 8 8 8 8 . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . 8 8 8 8 8 c 8 8 8 8 8 . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . 8 8 8 8 8 c 8 8 8 8 8 . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . 8 8 8 8 8 c 8 8 8 8 8 . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . 8 8 8 8 8 c 8 8 8 8 8 . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . 8 8 8 8 8 c 8 8 8 8 8 . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . 8 8 8 8 8 c 8 8 8 8 8 . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . 8 8 8 8 8 c 8 8 8 8 8 . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . 8 8 8 8 8 c 8 8 b 8 8 . . . . . . . . . . 4 4 4 4 . . . . . . . . . . 
-. . 4 4 4 4 4 . . . . . . . . 8 8 8 8 8 c 8 8 b b 8 . . . . . . 4 4 4 4 4 4 4 4 4 4 . . . . . . . . 
-. . 4 4 4 4 4 4 4 . . . . . . 8 8 8 8 8 c 8 8 8 8 8 . . . 4 4 4 4 4 4 4 4 4 4 4 4 4 . . . . . . . . 
-. . 4 4 4 4 4 4 4 4 4 4 4 4 4 4 8 8 8 8 c 8 8 8 8 8 . 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 . . . . . . . . 
-. . . 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 . . . . . . . . . . . 
-. . . 4 4 4 4 4 4 4 4 4 4 1 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 . . . . . . . . . . . . . . 
-. . . . . . . 4 4 4 4 1 1 1 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 . . . . . . . . . . . . . . . 
-. . . . . . . . . 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. f f f . f f f f . f f f . 
+f f f f f f f f f f f f f f 
+f f f f b f f f f b f f f f 
+f f f c 3 f f f f 3 c f f f 
+. f 3 3 f f f f f f 3 3 f . 
+. f f f f f e e f f f f f . 
+. f f f f e e e e f f f f . 
+. f f f b f e e f b f f f . 
+. f f e 1 f d d f 1 e f f . 
+. . f f d d d d d d f f . . 
+. . e f 2 2 2 2 2 2 f e . . 
+. e e f 4 2 2 2 4 4 f e e . 
+. e d f 4 2 2 2 4 2 c d e . 
+. e e f 2 2 2 2 2 2 f e e . 
+. . . . f f f f f f . . . . 
+. . . . f f . . f f . . . . 
 `, SpriteKind.Player)
+controller.moveSprite(Anise)
+scene.cameraFollowSprite(Anise)
