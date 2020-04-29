@@ -1,7 +1,10 @@
 {
     "name": "One",
     "dependencies": {
-        "device": "*"
+        "device": "*",
+        "animation": "*",
+        "corgio": "*",
+        "light": "*"
     },
     "description": "",
     "files": [
